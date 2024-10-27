@@ -1,0 +1,18 @@
+.container {
+  width: 112px;
+  height: 96px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+
+  border: 1px solid var(--Gray-light);
+  border-radius: 12px;
+
+  &:hover,
+  &:active {
+    border: 1px solid var(--Button-Hover);
+  }
+}

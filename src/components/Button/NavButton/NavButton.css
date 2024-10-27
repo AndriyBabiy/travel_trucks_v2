@@ -1,0 +1,31 @@
+.container {
+  width: fit-content;
+}
+.button {
+  width: 166px;
+
+  padding: 16px 0;
+  border-radius: 200px;
+  border: none;
+
+  color: var(--White);
+  background-color: var(--Button);
+
+  &:hover {
+    background-color: var(--Button-Hover);
+  }
+
+  &.home {
+    width: 173px;
+  }
+
+  &.loadMore {
+    color: var(--Main);
+    border: 1px solid var(--Gray-light);
+    background-color: var(--White);
+
+    &:hover {
+      border: 1px solid var(--Button-Hover);
+    }
+  }
+}

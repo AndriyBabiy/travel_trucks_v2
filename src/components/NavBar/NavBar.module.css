@@ -1,0 +1,47 @@
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding: 24px 64px;
+
+  background-color: var(--Badges);
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 136px;
+  height: 16px;
+}
+
+.navLinks {
+  display: flex;
+  gap: 32px;
+
+  margin-left: 450px;
+
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.link {
+  &:hover {
+    color: var(--Button-Hover);
+  }
+}
+
+.active {
+  color: var(--Button-Hover);
+}

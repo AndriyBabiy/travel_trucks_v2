@@ -1,0 +1,48 @@
+.productBio {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.headerGeneralDetails {
+  display: flex;
+  gap: 16px;
+}
+.headerDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.generalInfo {
+  display: flex;
+  gap: 16px;
+}
+
+.price {
+  font-size: 24px;
+
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.gallery {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.description {
+  color: var(--Text);
+
+  font-size: 16px;
+
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}

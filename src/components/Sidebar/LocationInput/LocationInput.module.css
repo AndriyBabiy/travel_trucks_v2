@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.locationSearchBar {
+  width: 360px;
+  padding: 18px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+
+  background-color: var(--Inputs);
+  border-radius: 12px;
+}
+
+.textInput {
+  all: unset;
+  font-family: inherit;
+  color: var(--Main);
+}

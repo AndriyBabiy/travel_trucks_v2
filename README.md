@@ -4,7 +4,7 @@ Travel Trucks is a camper van rental site.
 
 ## How to open
 
-Feel free to view the project using the (varcel deployment)[https://travel-trucks-v2.vercel.app/] or by cloning the code in your own environment and running [npm run deploy]
+Feel free to view the project using the [varcel deployment](https://travel-trucks-v2.vercel.app/) or by cloning the code in your own environment and running `npm run deploy`
 
 ## Overview
 

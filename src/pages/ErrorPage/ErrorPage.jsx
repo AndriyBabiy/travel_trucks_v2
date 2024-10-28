@@ -2,7 +2,7 @@ import { PiEngine } from "react-icons/pi";
 import { IoWarningOutline } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 
-function Error() {
+function ErrorPage() {
   return (
     <>
       <IoWarningOutline />
@@ -13,4 +13,4 @@ function Error() {
   );
 }
 
-export default Error;
+export default ErrorPage;

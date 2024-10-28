@@ -1,12 +1,13 @@
 import { useParams } from "react-router-dom";
-import css from "./Product.module.css";
+import css from "./ProductPage.module.css";
 // import { useEffect } from "react";
 // import { useDispatch } from "react-redux";
 import ProductPageInfo from "../../components/ProductPageInfo/ProductPageInfo";
 // import { fetchProducts } from "../../redux/operations";
 import data from "../../../public/data.json";
+import { CamperVanDetails } from "../../components/CamperVanDetails/CamperVanDetails";
 
-const Product = () => {
+const ProductPage = () => {
   const { id: productId } = useParams();
 
   const product = data.items.filter(({ id }) => id === productId)[0];
@@ -37,8 +38,9 @@ const Product = () => {
   return (
     <div className={css.container}>
       <ProductPageInfo product={product} />
+      <CamperVanDetails />
     </div>
   );
 };
 
-export default Product;
+export default ProductPage;

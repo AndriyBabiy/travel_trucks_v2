@@ -9,7 +9,7 @@ const buildLinkClass = ({ isActive }) => {
 
 const NavBar = () => {
   return (
-    <div className={css.navBar}>
+    <header className={css.navBar}>
       <div className={css.content}>
         <img src={logo} className={css.logo} />
         <nav className={css.navLinks}>
@@ -21,7 +21,7 @@ const NavBar = () => {
           </NavLink>
         </nav>
       </div>
-    </div>
+    </header>
   );
 };
 

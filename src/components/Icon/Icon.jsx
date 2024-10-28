@@ -15,7 +15,7 @@ const Icon = ({
     fill={fill}
     stroke={stroke}
   >
-    <use href={`../public/icons.svg#icon-${iconId}`} />
+    <use href={`/public/icons.svg#icon-${iconId}`} />
   </svg>
 );
 

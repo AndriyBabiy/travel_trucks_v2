@@ -36,7 +36,7 @@ const CatalogPage = () => {
   return (
     <div className={css.container}>
       <Filters />
-      {isLoading ? <ProductList /> : <ProductList />}
+      {isLoading ? <h2>Loading</h2> : <ProductList />}
     </div>
   );
 };

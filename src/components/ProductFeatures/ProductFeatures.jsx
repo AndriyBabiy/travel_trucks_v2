@@ -46,7 +46,7 @@ function ProductFeatures({ product }) {
     product &&
     getFeatures(product).map(({ name, icon }) => (
       <div key={name} className={css.featureBadge}>
-        <Icon iconId={icon} width={"20px"} height={"20px"}></Icon>
+        <Icon iconId={icon} size={"20"} width={"20px"} height={"20px"}></Icon>
         <p className={css.badgeText}>{name}</p>
       </div>
     ))

@@ -16,11 +16,7 @@ function ProductCard({ product }) {
             <h2 className={css.title}>{product.name}</h2>
             <div className={css.title_right}>
               <p className={css.title}>{`€${product.price}.00`}</p>
-              <Icon
-                iconId={"heart_inactive"}
-                width={"26px"}
-                height={"24px"}
-              ></Icon>
+              <Icon iconId={"heart_inactive"} size={"26"}></Icon>
             </div>
           </div>
           <div className={css.headerBottom}>

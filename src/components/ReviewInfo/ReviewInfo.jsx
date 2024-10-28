@@ -11,7 +11,7 @@ function ReviewInfo({ product }) {
 
   return (
     <div className={css.container}>
-      <Icon iconId={"star_active"} width={"16px"} height={"16px"}></Icon>
+      <Icon iconId={"star_active"} size={"16"} height={"16px"}></Icon>
       <p>{`${getAvgRating(product.reviews)}(${
         product.reviews.length
       } Reviews)`}</p>

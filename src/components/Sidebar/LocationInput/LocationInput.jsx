@@ -9,12 +9,18 @@ function LocationInput() {
       <div className={css.locationSearchBar}>
         <Icon
           iconId={"map"}
+          size={"20"}
           width={20}
           fill={"#050505"}
           stroke={"#050505"}
           height={20}
         ></Icon>
-        <input type="text" name="Location" className={css.textInput} />
+        <input
+          type="text"
+          name="Location"
+          className={css.textInput}
+          placeholder="Kyiv, Ukraine"
+        />
       </div>
     </div>
   );

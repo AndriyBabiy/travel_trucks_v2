@@ -1,3 +1,4 @@
+import { useState } from "react";
 import NavButton from "../../Button/NavButton/NavButton";
 import Icon from "../../Icon/Icon";
 import ItemList from "../../ItemList/ItemList";
@@ -7,6 +8,12 @@ import ReviewInfo from "../../ReviewInfo/ReviewInfo";
 import css from "./ProductCard.module.css";
 
 function ProductCard({ product }) {
+  const [favorite, setFavorite] = useState(false);
+
+  const handleFavorite = () => {
+    setFavorite(!favorite);
+  };
+
   return (
     <div className={css.container}>
       <img className={css.image} src={product.gallery[0].thumb}></img>
@@ -16,7 +23,13 @@ function ProductCard({ product }) {
             <h2 className={css.title}>{product.name}</h2>
             <div className={css.title_right}>
               <p className={css.title}>{`€${product.price}.00`}</p>
-              <Icon iconId={"heart_inactive"} size={"26"}></Icon>
+              <button onClick={handleFavorite}>
+                {favorite ? (
+                  <Icon iconId={"heart_active"} size={"26"}></Icon>
+                ) : (
+                  <Icon iconId={"heart_inactive"} size={"26"}></Icon>
+                )}
+              </button>
             </div>
           </div>
           <div className={css.headerBottom}>

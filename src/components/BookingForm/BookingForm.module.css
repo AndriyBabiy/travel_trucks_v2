@@ -1,0 +1,49 @@
+.bookingForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid var(--Gray-light, #dadde1);
+  padding: 44px;
+  width: 100%;
+  max-width: 527px;
+}
+.formTitle {
+  align-self: flex-start;
+  font: 600 20px/1.2 Inter, sans-serif;
+  color: var(--Main, #101828);
+}
+.formDescription {
+  align-self: flex-start;
+  color: var(--Gray, #6c717b);
+  font-size: 16px;
+  margin-top: 8px;
+}
+.formInput {
+  border-radius: 12px;
+  border: none;
+  background: var(--Inputs, #f7f7f7);
+  width: 100%;
+  padding: 18px;
+  margin-top: 14px;
+}
+.submitButton {
+  border-radius: 200px;
+  background: var(--Button, #e44848);
+  color: var(--White, #fff);
+  font: 500 16px Inter, sans-serif;
+  padding: 16px 60px;
+  margin-top: 24px;
+  width: fit-content;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

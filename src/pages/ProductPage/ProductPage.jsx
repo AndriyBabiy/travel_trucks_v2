@@ -5,7 +5,7 @@ import css from "./ProductPage.module.css";
 import ProductPageInfo from "../../components/ProductPageInfo/ProductPageInfo";
 // import { fetchProducts } from "../../redux/operations";
 import data from "../../../public/data.json";
-import { CamperVanDetails } from "../../components/CamperVanDetails/CamperVanDetails";
+// import { CamperVanDetails } from "../../components/CamperVanDetails/CamperVanDetails";
 
 const ProductPage = () => {
   const { id: productId } = useParams();
@@ -38,7 +38,6 @@ const ProductPage = () => {
   return (
     <div className={css.container}>
       <ProductPageInfo product={product} />
-      <CamperVanDetails />
     </div>
   );
 };

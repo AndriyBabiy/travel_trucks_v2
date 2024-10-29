@@ -7,6 +7,7 @@ import ImageCard from "../ImageCard/ImageCard";
 import { Tab, Tabs } from "@mui/material";
 import ItemList from "../ItemList/ItemList";
 import ProductFeatures from "../ProductFeatures/ProductFeatures";
+import BookingForm from "../BookingForm/BookingForm";
 // import { useEffect, useState } from "react";
 
 function ProductPageInfo({ product }) {
@@ -24,6 +25,15 @@ function ProductPageInfo({ product }) {
   // console.log(products);
 
   // setProduct(products.filter(({ id }) => id === productId));
+
+  const vehicleDetails = [
+    { label: "Form", value: "Panel truck" },
+    { label: "Length", value: "5.4 m" },
+    { label: "Width", value: "2.01 m" },
+    { label: "Height", value: "2.05 m" },
+    { label: "Tank", value: "132 I" },
+    { label: "Consumption", value: "12.4l/100km" },
+  ];
 
   return (
     <div>
@@ -52,7 +62,7 @@ function ProductPageInfo({ product }) {
         <div className={css.description}>{product.description}</div>
       </div>
 
-      <div>
+      <div className={css.sectionToggle}>
         <Tabs defaultActiveTab="Features">
           <Tab label="Features">
             <div>Content for Tab 1</div>
@@ -63,10 +73,28 @@ function ProductPageInfo({ product }) {
         </Tabs>
       </div>
 
-      <div className={css.productInfo}>
-        <ItemList>
-          <ProductFeatures product={product} />
-        </ItemList>
+      <div className={css.bottomSection}>
+        <div className={css.productInfo}>
+          <ItemList>
+            <ProductFeatures
+              product={product}
+              className={css.ProductFeatures}
+            />
+          </ItemList>
+          <div>
+            <h3 className={css.listName}>Vehicle Details</h3>
+            <hr className={css.lineBreak} />
+            <ul className={css.detailsList}>
+              {vehicleDetails.map((detail, index) => (
+                <li key={index} className={css.listItem}>
+                  <span>{detail.label}</span>
+                  <span>{detail.value}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <BookingForm />
       </div>
     </div>
   );

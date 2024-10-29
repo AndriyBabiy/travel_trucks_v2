@@ -1,6 +1,6 @@
 import styles from "./CamperVanDetails.module.css";
 import { FeatureTag } from "./FeatureTag";
-import { BookingForm } from "./BookingForm";
+import BookingForm from "../BookingForm/BookingForm";
 
 const features = [
   {

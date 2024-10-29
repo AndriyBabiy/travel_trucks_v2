@@ -1,7 +1,12 @@
 .productBio {
+  max-width: 1312px;
+  margin: 0 auto;
+
   display: flex;
   flex-direction: column;
   gap: 28px;
+
+  padding-bottom: 60px;
 }
 
 .header {
@@ -45,4 +50,53 @@
 
   font-weight: 400;
   line-height: 24px; /* 150% */
+}
+
+.sectionToggle {
+  width: 100%;
+  padding-bottom: 44px;
+}
+
+.bottomSection {
+  width: 100%;
+  display: flex;
+  gap: 40px;
+}
+
+.productFeatures {
+  display: flex;
+}
+
+.productInfo {
+  background-color: var(--Inputs);
+  padding: 44px 52px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.listName {
+  color: var(--Main, #101828);
+  /* H3 */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 120% */
+}
+
+.detailsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.lineBreak {
+  margin: 25px 0;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
 }

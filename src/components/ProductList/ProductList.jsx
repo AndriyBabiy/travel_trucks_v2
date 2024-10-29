@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import ProductCard from "./ProductCard/ProductCard";
 import css from "./ProductList.module.css";
 import { selectProducts } from "../../redux/selectors";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import NavButton from "../Button/NavButton/NavButton";
 
 function ProductList() {
@@ -12,6 +12,10 @@ function ProductList() {
   const [displayedData, setDisplayedData] = useState(
     products?.slice(0, visibleItemCount)
   );
+
+  useEffect(() => {
+    setDisplayedData(products?.slice(0, visibleItemCount));
+  }, [visibleItemCount, products]);
 
   const handleLoadMore = () => {
     setVisibleItemCount((prevCount) => prevCount + 4);

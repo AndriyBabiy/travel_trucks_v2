@@ -1,7 +1,7 @@
 import css from "./ItemList.module.css";
 
 function ItemList({ children }) {
-  return <div className={css.container}> {children}</div>;
+  return <ul className={css.container}> {children}</ul>;
 }
 
 export default ItemList;

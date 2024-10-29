@@ -3,10 +3,12 @@ import css from "./FilterButton.module.css";
 
 function FilterButton({ name, iconId }) {
   return (
-    <button className={css.container}>
-      <Icon iconId={iconId}></Icon>
-      <p className={css.text}>{name}</p>
-    </button>
+    <li>
+      <button className={css.container}>
+        <Icon iconId={iconId}></Icon>
+        <p className={css.text}>{name}</p>
+      </button>
+    </li>
   );
 }
 
